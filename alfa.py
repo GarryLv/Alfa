@@ -27,14 +27,9 @@ class Example(QWidget):
 
     def draw_flag(self, qp):
         # Задаем кисть
-        qp.setBrush(QColor(255, 0, 0))
+        qp.setBrush(QColor(255,255, 0))
         # Рисуем прямоугольник заданной кистью
-        qp.drawRect(30, 30, 120, 30)
-        qp.setBrush(QColor(0, 255, 0))
-        qp.drawRect(30, 60, 120, 30)
-        qp.setBrush(QColor(0, 0, 255))
-        qp.drawRect(30, 90, 120, 30)
-
+        qp.drawEllipse(30, 30, 120, 120)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
